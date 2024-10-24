@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex; 
+    flex-direction: column;
+    background-color:whitesmoke;
+      
+}
+
+header{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding: 10px 10px;
+}
+
+.logo{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px black ;
+}
+
+.navbar{
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar li a{
+    display: inline-block;
+    color:  rgb(95, 71, 159);
+    font-size: 19px;
+    font-weight: bold;
+    font-family:"Agdasima";
+
+}
+
+.navbar ul li a:hover{
+    color: grey;
+    position: relative;
+    
+}
+
+.navbar a.active {
+    text-decoration: underline;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 50px auto;
+    padding: 30px;
+    justify-content: center;
+}
+
+.gallery img{
+    display: inline-block;
+    width: 300px;
+    align-items: center;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 3px 3px 3px black;
+    transition: transform 0.2s;
+}    
+
+.gallery img:hover{
+    transform: scale(1.05);
+}
+
+.text{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 50px auto;
+    padding: 30px;
+    justify-content: center;
+}
+
+.block{
+  flex: 1;
+  padding: 60px;
+  width: 300px;
+  height: auto;
+  gap: 100px;
+  background-color: beige;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: "FiraSans";
+  min-width: 200px;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px black;
+  text-align: center;
+  line-height: 1.5;
+  margin: 10px;
+
+}
+
+.block:hover{
+    transform: scale(1.05);
+}
+
+.contactform {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 80px auto;
+    padding: 30px;
+    justify-content: center;
+    max-width: 600px; 
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 10px 20px 10px black;
+}
+ h2 {
+   width: 100%;
+   text-align: center;
+   color: black;
+   font-weight: bold;
+   font-family: "Goblin One", serif;
+   font-size: 50px;
+
+
+ }
+label {
+    display: block;
+    margin: 15px 0 3px;
+    color: black;
+    font-weight: bold;
+}
+
+input, textarea{
+    width: 200px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus{
+    width: 100%;
+    border-color: black;
+    outline: none;
+}
+
+.button-container{
+  display: flex;
+  justify-content:flex-end;
+  margin-top: 10px;
+  
+}
+
+button {
+    width: auto;
+    padding: 10px 10px;
+    background-color: rgb(199, 199, 167);
+    color: black;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: white;
+    text-decoration: underline;
+}
+
+footer{
+    background-color: beige;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    box-shadow: 0 -2px 5 px black;
+    position: fixed;
+    border: 1px solid black;
+    font-family: "Goblin One", serif;
+    font-weight: light;
+}
+
+.footer-container{
+   margin-top: 5px;
+
+}
+
+/* Fonts */
+
+@font-face{
+  font-family:"Agdasima";
+  src: url(Fonts/Agdasima-Regular.ttf);
+}
+
+@font-face{
+    font-family:"FiraSans";
+    src: url(Fonts/FiraSansCondensed-BoldItalic.ttf);
+}
+
+.goblin-one-regular {
+    font-family: "Goblin One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@media (min-width: 375px) {
+    .contactform{
+        padding: 15px;
+    }
+    .h2
+    .label
+    .input, textarea
+    .input:focus, textarea:focus
+    .button-container
+    .button
+    .button:hover{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--länk till Tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+
+    <!--länk till Font-Awesome ikoner-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!--länk till favicon (i fliken)-->
+    <link rel="icon" href="./../Images /favicon-16x16.png" type="image/x-icon">
+    
+    
+     <!--länk till css-->
+     <link rel="stylesheet" href="./../style.css">
+   
+    <title>TRAVELAGENCY</title>
+</head>
+
+<body>
+  
+<!--loggan-->
+    <header>
+      <div class="logo">  
+        <img src="./../Images /elin.jpg" class="object-cover rounded-full h-48 w-45">
+      </div>
+
+   <!--Navigerings menun-->
+       <nav class="navbar">
+        <ul>
+         <li><a href="./../index.html">Home</a></li>
+         <li><a href="./../Pages/contact.html" class="active">Contact</a></li>
+         <li><a href="./../Pages/destinations.html">Destinations</a></li>
+         <li><a href="./../Pages/about.html">About us</a></li>
+        </ul>
+       </nav>
+     </header>
+
+ <main>
+
+ <!--formulär-->
+ <section class="content">
+ <div class="contactform">
+
+  <!--Tailwind class på h2-->
+   <h2 class="font-bold underline">Contact us here:</h2>
+  
+   <form>
+    
+     <label for="">Name:</label>
+     <input type="text" id="name" name="name" placeholder="Name"> <i class="fa-solid fa-user"></i>
+
+
+     <label for="age">Age:</label>
+     <input type="date" id="age" name="age" required>
+
+    
+     <label for="email">Email:</label>
+     <input type="email" id="email" name="email" placeholder="Email" required> <i class="fa-solid fa-envelope"></i>
+
+      <label for="phone">Phonenumber:</label>
+     <input type="phone" id="phone" name="phone" placeholder="Number"> <i class="fa-solid fa-phone"></i>
+
+    
+      <label for="message">Message:</label>
+      <textarea type="text" id="message" name="message" rows="6" maxlength="100"> </textarea>  <i class="fa-solid fa-comment"></i>
+    
+      <div class="button-container">
+      <button type="submit">Send</button>  <i class="fa-regular fa-paper-plane"></i>
+      </div>
+    </form>
+</div>
+</section>
+
+</main>
+   
+
+
+<footer class="footer">
+ <p>Follow us:</p>
+ <div class="footer-container"></div>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-youtube"></i>
+</footer>
+
+
+
+</body>
+</html>
